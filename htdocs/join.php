@@ -7,33 +7,33 @@ include 'guest_only.php';
 <script>
 function submitForm(form) {
 	if ( form.loginId.value == '' ) {
-		alert('아이디를 입력해주세요');
+		alert('아이디를 입력해주세요..');
 		form.loginId.focus();
-		
+
 		return false;
 	}
 
 	if ( form.nickname.value == '' ) {
 		alert('닉네임을 입력해주세요');
 		form.nickname.focus();
-		
+
 		return false;
 	}
-	
+
 	if ( form.loginPassword.value == '' ) {
 		alert('비밀번호를 입력해주세요');
 		form.loginPassword.focus();
-		
+
 		return false;
 	}
-	
+
 	if ( form.loginPassword.value != form.loginPasswordConfirm.value ) {
 		alert('비밀번호 확인을 동일하게 입력해주세요.');
 		form.loginPasswordConfirm.focus();
-		
+
 		return false;
 	}
-	
+
 	form.submit();
 }
 </script>
